@@ -1,0 +1,15 @@
+{
+  "name": "deep-into-js",
+  "version": "1.0.0",
+  "private": true,
+  "author": "glitchboyl",
+  "description": "Deep learning JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:glitchboyl/deep-into-js.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.44.1"
+  }
+}
