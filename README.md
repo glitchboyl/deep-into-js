@@ -1,18 +1,18 @@
 ## 深入学习 JavaScript
 
 1. JavaScript 类型检测
-   - [Primitive](tree/master/src/is/getPrimitive.js) ✔
-   - [String](tree/master/src/is/isString.js) ✔
-   - [Number](tree/master/src/is/isNumber.js) ✔
-   - [Boolean](tree/master/src/is/isBoolean.js) ✔
-   - [null](tree/master/src/is/isNull.js) ✔
-   - [undefined](tree/master/src/is/isUndefined.js) ✔
-   - [Symbol](tree/master/src/is/isSymbol.js) ✔
-   - [BigInt](tree/master/src/is/isBigInt.js) ✔
-   - [Object](tree/master/src/is/isObject.js) (typeof is `object` or `function` but not `null`) ✔
-   - [Object Like](tree/master/src/is/isObjectLike.js) (typeof is `object` but not `null`) ✔
-   - [Plain Object](tree/master/src/is/isPlainObject.js) (object which it is containing zero or more key-value pairs) ✔
-   - [Arguments](tree/master/src/is/isArguments.js) ✔
+   - [Primitive](src/is/getPrimitive.js) ✔
+   - [String](src/is/isString.js) ✔
+   - [Number](src/is/isNumber.js) ✔
+   - [Boolean](src/is/isBoolean.js) ✔
+   - [null](src/is/isNull.js) ✔
+   - [undefined](src/is/isUndefined.js) ✔
+   - [Symbol](src/is/isSymbol.js) ✔
+   - [BigInt](src/is/isBigInt.js) ✔
+   - [Object](src/is/isObject.js) (typeof is `object` or `function`, but not `null`.) ✔
+   - [Object Like](src/is/isObjectLike.js) (typeof is `object`, but not `null`.) ✔
+   - [Plain Object](src/is/isPlainObject.js) (object which it is containing zero or more key-value pairs.) ✔
+   - [Arguments](src/is/isArguments.js) ✔
 2. new 运算符
 3. call, apply, bind
 4. 柯里化 (currying)
