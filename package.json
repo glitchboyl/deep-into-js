@@ -8,8 +8,13 @@
     "type": "git",
     "url": "git@github.com:glitchboyl/deep-into-js.git"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.44.1"
+    "babel-plugin-module-resolver": "^4.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "jest": "^26.4.0"
   }
 }

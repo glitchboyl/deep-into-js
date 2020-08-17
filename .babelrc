@@ -1,0 +1,18 @@
+{
+  "env": {
+    "test": {
+      "plugins": [
+        "@babel/plugin-transform-modules-commonjs",
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "test": "./test"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}
