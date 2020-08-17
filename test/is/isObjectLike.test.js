@@ -1,4 +1,3 @@
-import assert from "assert";
 import isObjectLike from "is/isObjectLike";
 import {
   string,
@@ -10,27 +9,25 @@ import {
   func,
 } from "test/utils";
 
-describe("isObjectLike", function () {
-  it("should return `true` for objects", function () {
-    assert.strictEqual(isObjectLike(object), true);
-    assert.strictEqual(isObjectLike(array), true);
-    assert.strictEqual(isObjectLike(Object(string)), true);
-    assert.strictEqual(isObjectLike(Object(number)), true);
-    assert.strictEqual(isObjectLike(Object(false)), true);
-    assert.strictEqual(isObjectLike(Object(symbol)), true);
-    assert.strictEqual(isObjectLike(Object(bigint)), true);
-    assert.strictEqual(isObjectLike(new Date), true);
-    assert.strictEqual(isObjectLike(new Error), true);
-  });
+test("should return `true` for object-like", () => {
+  expect(isObjectLike(object)).toBeTruthy();
+  expect(isObjectLike(array)).toBeTruthy();
+  expect(isObjectLike(Object(string))).toBeTruthy();
+  expect(isObjectLike(Object(number))).toBeTruthy();
+  expect(isObjectLike(Object(false))).toBeTruthy();
+  expect(isObjectLike(Object(symbol))).toBeTruthy();
+  expect(isObjectLike(Object(bigint))).toBeTruthy();
+  expect(isObjectLike(new Date())).toBeTruthy();
+  expect(isObjectLike(new Error())).toBeTruthy();
+});
 
-  it("should return `false` for non-objects", function () {
-    assert.strictEqual(isObjectLike(string), false);
-    assert.strictEqual(isObjectLike(number), false);
-    assert.strictEqual(isObjectLike(true), false);
-    assert.strictEqual(isObjectLike(null), false);
-    assert.strictEqual(isObjectLike(void 0), false);
-    assert.strictEqual(isObjectLike(symbol), false);
-    assert.strictEqual(isObjectLike(bigint), false);
-    assert.strictEqual(isObjectLike(func), false);
-  });
+test("should return `false` for non-object-like", () => {
+  expect(isObjectLike(string)).toBeFalsy();
+  expect(isObjectLike(number)).toBeFalsy();
+  expect(isObjectLike(true)).toBeFalsy();
+  expect(isObjectLike(null)).toBeFalsy();
+  expect(isObjectLike(void 0)).toBeFalsy();
+  expect(isObjectLike(symbol)).toBeFalsy();
+  expect(isObjectLike(bigint)).toBeFalsy();
+  expect(isObjectLike(func)).toBeFalsy();
 });

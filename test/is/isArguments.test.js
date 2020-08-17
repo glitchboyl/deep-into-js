@@ -1,4 +1,3 @@
-import assert from "assert";
 import isArguments from "is/isArguments";
 import {
   string,
@@ -10,22 +9,20 @@ import {
   func,
 } from "test/utils";
 
-describe("isArguments", function () {
-  it("should return `true` for arguments", function () {
-    assert.strictEqual(isArguments(arguments), true);
-    assert.strictEqual(isArguments(Object(arguments)), true);
-  });
+test("should return `true` for arguments", () => {
+  expect(isArguments(arguments)).toBeTruthy();
+  expect(isArguments(Object(arguments))).toBeTruthy();
+});
 
-  it("should return `false` for non-arguments", function () {
-    assert.strictEqual(isArguments(string), false);
-    assert.strictEqual(isArguments(number), false);
-    assert.strictEqual(isArguments(true), false);
-    assert.strictEqual(isArguments(null), false);
-    assert.strictEqual(isArguments(void 0), false);
-    assert.strictEqual(isArguments(symbol), false);
-    assert.strictEqual(isArguments(bigint), false);
-    assert.strictEqual(isArguments(object), false);
-    assert.strictEqual(isArguments(array), false);
-    assert.strictEqual(isArguments(func), false);
-  });
+test("should return `false` for non-arguments", () => {
+  expect(isArguments(string)).toBeFalsy();
+  expect(isArguments(number)).toBeFalsy();
+  expect(isArguments(true)).toBeFalsy();
+  expect(isArguments(null)).toBeFalsy();
+  expect(isArguments(void 0)).toBeFalsy();
+  expect(isArguments(symbol)).toBeFalsy();
+  expect(isArguments(bigint)).toBeFalsy();
+  expect(isArguments(object)).toBeFalsy();
+  expect(isArguments(array)).toBeFalsy();
+  expect(isArguments(func)).toBeFalsy();
 });

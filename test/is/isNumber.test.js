@@ -1,4 +1,3 @@
-import assert from "assert";
 import isNumber from "is/isNumber";
 import {
   string,
@@ -10,22 +9,20 @@ import {
   func,
 } from "test/utils";
 
-describe("isNumber", function () {
-  it("should return `true` for numbers", function () {
-    assert.strictEqual(isNumber(number), true);
-    assert.strictEqual(isNumber(Object(number)), true);
-    assert.strictEqual(isNumber(NaN), true);
-  });
+test("should return `true` for numbers", () => {
+  expect(isNumber(number)).toBeTruthy();
+  expect(isNumber(Object(number))).toBeTruthy();
+  expect(isNumber(NaN)).toBeTruthy();
+});
 
-  it("should return `false` for non-numbers", function () {
-    assert.strictEqual(isNumber(string), false);
-    assert.strictEqual(isNumber(true), false);
-    assert.strictEqual(isNumber(null), false);
-    assert.strictEqual(isNumber(void 0), false);
-    assert.strictEqual(isNumber(symbol), false);
-    assert.strictEqual(isNumber(bigint), false);
-    assert.strictEqual(isNumber(object), false);
-    assert.strictEqual(isNumber(array), false);
-    assert.strictEqual(isNumber(func), false);
-  });
+test("should return `false` for non-numbers", () => {
+  expect(isNumber(string)).toBeFalsy();
+  expect(isNumber(true)).toBeFalsy();
+  expect(isNumber(null)).toBeFalsy();
+  expect(isNumber(void 0)).toBeFalsy();
+  expect(isNumber(symbol)).toBeFalsy();
+  expect(isNumber(bigint)).toBeFalsy();
+  expect(isNumber(object)).toBeFalsy();
+  expect(isNumber(array)).toBeFalsy();
+  expect(isNumber(func)).toBeFalsy();
 });

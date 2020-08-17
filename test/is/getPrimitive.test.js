@@ -1,4 +1,3 @@
-import assert from "assert";
 import getPrimitive from "is/getPrimitive";
 import {
   string,
@@ -10,48 +9,46 @@ import {
   func,
 } from "test/utils";
 
-describe("getPrimitive", function () {
-  it(`getPrimitive('${string}') should return \`[object String]\``, function () {
-    assert.strictEqual(getPrimitive(string), "[object String]");
-  });
+test(`getPrimitive('${string}') should return \`[object String]\``, () => {
+  expect(getPrimitive(string)).toBe("[object String]");
+});
 
-  it(`getPrimitive(${number}) should return \`[object Number]\``, function () {
-    assert.strictEqual(getPrimitive(number), "[object Number]");
-  });
+test(`getPrimitive(${number}) should return \`[object Number]\``, () => {
+  expect(getPrimitive(number)).toBe("[object Number]");
+});
 
-  it("getPrimitive(false) should return `[object Boolean]`", function () {
-    assert.strictEqual(getPrimitive(false), "[object Boolean]");
-  });
+test("getPrimitive(false) should return `[object Boolean]`", () => {
+  expect(getPrimitive(false)).toBe("[object Boolean]");
+});
 
-  it("getPrimitive(null) should return `[object Null]`", function () {
-    assert.strictEqual(getPrimitive(null), "[object Null]");
-  });
+test("getPrimitive(null) should return `[object Null]`", () => {
+  expect(getPrimitive(null)).toBe("[object Null]");
+});
 
-  it("getPrimitive(void 0) should return `[object Undefined]`", function () {
-    assert.strictEqual(getPrimitive(void 0), "[object Undefined]");
-  });
+test("getPrimitive(void 0) should return `[object Undefined]`", () => {
+  expect(getPrimitive(void 0)).toBe("[object Undefined]");
+});
 
-  it(`getPrimitive(${symbol.toString()}) should return \`[object Symbol]\``, function () {
-    assert.strictEqual(getPrimitive(symbol), "[object Symbol]");
-  });
+test(`getPrimitive(${symbol.toString()}) should return \`[object Symbol]\``, () => {
+  expect(getPrimitive(symbol)).toBe("[object Symbol]");
+});
 
-  it(`getPrimitive(${bigint}n) should return \`[object BigInt]\``, function () {
-    assert.strictEqual(getPrimitive(bigint), "[object BigInt]");
-  });
+test(`getPrimitive(${bigint}n) should return \`[object BigInt]\``, () => {
+  expect(getPrimitive(bigint)).toBe("[object BigInt]");
+});
 
-  it(`getPrimitive(${JSON.stringify(
-    object
-  )}) should return \`[object Object]\``, function () {
-    assert.strictEqual(getPrimitive(object), "[object Object]");
-  });
+test(`getPrimitive(${JSON.stringify(
+  object
+)}) should return \`[object Object]\``, () => {
+  expect(getPrimitive(object)).toBe("[object Object]");
+});
 
-  it(`getPrimitive(${JSON.stringify(
-    array
-  )}) should return \`[object Array]\``, function () {
-    assert.strictEqual(getPrimitive(array), "[object Array]");
-  });
+test(`getPrimitive(${JSON.stringify(
+  array
+)}) should return \`[object Array]\``, () => {
+  expect(getPrimitive(array)).toBe("[object Array]");
+});
 
-  it(`getPrimitive(${func.toString()}) should return \`[object Function]\``, function () {
-    assert.strictEqual(getPrimitive(func), "[object Function]");
-  });
+test(`getPrimitive(${func.toString()}) should return \`[object Function]\``, () => {
+  expect(getPrimitive(func)).toBe("[object Function]");
 });

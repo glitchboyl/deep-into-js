@@ -1,4 +1,3 @@
-import assert from "assert";
 import isObject from "is/isObject";
 import {
   string,
@@ -10,27 +9,25 @@ import {
   func,
 } from "test/utils";
 
-describe("isObject", function () {
-  it("should return `true` for objects", function () {
-    assert.strictEqual(isObject(object), true);
-    assert.strictEqual(isObject(array), true);
-    assert.strictEqual(isObject(func), true);
-    assert.strictEqual(isObject(Object(string)), true);
-    assert.strictEqual(isObject(Object(number)), true);
-    assert.strictEqual(isObject(Object(false)), true);
-    assert.strictEqual(isObject(Object(symbol)), true);
-    assert.strictEqual(isObject(Object(bigint)), true);
-    assert.strictEqual(isObject(new Date()), true);
-    assert.strictEqual(isObject(new Error()), true);
-  });
+test("should return `true` for objects", () => {
+  expect(isObject(object)).toBeTruthy();
+  expect(isObject(array)).toBeTruthy();
+  expect(isObject(func)).toBeTruthy();
+  expect(isObject(Object(string))).toBeTruthy();
+  expect(isObject(Object(number))).toBeTruthy();
+  expect(isObject(Object(false))).toBeTruthy();
+  expect(isObject(Object(symbol))).toBeTruthy();
+  expect(isObject(Object(bigint))).toBeTruthy();
+  expect(isObject(new Date())).toBeTruthy();
+  expect(isObject(new Error())).toBeTruthy();
+});
 
-  it("should return `false` for non-objects", function () {
-    assert.strictEqual(isObject(string), false);
-    assert.strictEqual(isObject(number), false);
-    assert.strictEqual(isObject(true), false);
-    assert.strictEqual(isObject(null), false);
-    assert.strictEqual(isObject(void 0), false);
-    assert.strictEqual(isObject(symbol), false);
-    assert.strictEqual(isObject(bigint), false);
-  });
+test("should return `false` for non-objects", () => {
+  expect(isObject(string)).toBeFalsy();
+  expect(isObject(number)).toBeFalsy();
+  expect(isObject(true)).toBeFalsy();
+  expect(isObject(null)).toBeFalsy();
+  expect(isObject(void 0)).toBeFalsy();
+  expect(isObject(symbol)).toBeFalsy();
+  expect(isObject(bigint)).toBeFalsy();
 });

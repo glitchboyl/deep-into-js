@@ -1,4 +1,3 @@
-import assert from "assert";
 import isBigInt from "is/isBigInt";
 import {
   string,
@@ -10,21 +9,19 @@ import {
   func,
 } from "test/utils";
 
-describe("isSymbol", function () {
-  it("should return `true` for bigints", function () {
-    assert.strictEqual(isBigInt(bigint), true);
-    assert.strictEqual(isBigInt(Object(bigint)), true);
-  });
+test("should return `true` for bigints", () => {
+  expect(isBigInt(bigint)).toBeTruthy();
+  expect(isBigInt(Object(bigint))).toBeTruthy();
+});
 
-  it("should return `false` for non-bigints", function () {
-    assert.strictEqual(isBigInt(string), false);
-    assert.strictEqual(isBigInt(number), false);
-    assert.strictEqual(isBigInt(false), false);
-    assert.strictEqual(isBigInt(null), false);
-    assert.strictEqual(isBigInt(void 0), false);
-    assert.strictEqual(isBigInt(symbol), false);
-    assert.strictEqual(isBigInt(object), false);
-    assert.strictEqual(isBigInt(array), false);
-    assert.strictEqual(isBigInt(func), false);
-  });
+test("should return `false` for non-bigints", () => {
+  expect(isBigInt(string)).toBeFalsy();
+  expect(isBigInt(number)).toBeFalsy();
+  expect(isBigInt(true)).toBeFalsy();
+  expect(isBigInt(null)).toBeFalsy();
+  expect(isBigInt(void 0)).toBeFalsy();
+  expect(isBigInt(symbol)).toBeFalsy();
+  expect(isBigInt(object)).toBeFalsy();
+  expect(isBigInt(array)).toBeFalsy();
+  expect(isBigInt(func)).toBeFalsy();
 });

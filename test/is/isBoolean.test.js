@@ -1,4 +1,3 @@
-import assert from "assert";
 import isBoolean from "is/isBoolean";
 import {
   string,
@@ -10,23 +9,21 @@ import {
   func,
 } from "test/utils";
 
-describe("isBoolean", function () {
-  it("should return `true` for booleans", function () {
-    assert.strictEqual(isBoolean(true), true);
-    assert.strictEqual(isBoolean(false), true);
-    assert.strictEqual(isBoolean(Object(true)), true);
-    assert.strictEqual(isBoolean(Object(false)), true);
-  });
+test("should return `true` for booleans", () => {
+  expect(isBoolean(true)).toBeTruthy();
+  expect(isBoolean(false)).toBeTruthy();
+  expect(isBoolean(Object(true))).toBeTruthy();
+  expect(isBoolean(Object(false))).toBeTruthy();
+});
 
-  it("should return `false` for non-booleans", function () {
-    assert.strictEqual(isBoolean(string), false);
-    assert.strictEqual(isBoolean(number), false);
-    assert.strictEqual(isBoolean(null), false);
-    assert.strictEqual(isBoolean(void 0), false);
-    assert.strictEqual(isBoolean(symbol), false);
-    assert.strictEqual(isBoolean(bigint), false);
-    assert.strictEqual(isBoolean(object), false);
-    assert.strictEqual(isBoolean(array), false);
-    assert.strictEqual(isBoolean(func), false);
-  });
+test("should return `false` for non-booleans", () => {
+  expect(isBoolean(string)).toBeFalsy();
+  expect(isBoolean(number)).toBeFalsy();
+  expect(isBoolean(null)).toBeFalsy();
+  expect(isBoolean(void 0)).toBeFalsy();
+  expect(isBoolean(symbol)).toBeFalsy();
+  expect(isBoolean(bigint)).toBeFalsy();
+  expect(isBoolean(object)).toBeFalsy();
+  expect(isBoolean(array)).toBeFalsy();
+  expect(isBoolean(func)).toBeFalsy();
 });

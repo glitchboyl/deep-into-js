@@ -1,4 +1,3 @@
-import assert from "assert";
 import isString from "is/isString";
 import {
   string,
@@ -10,21 +9,19 @@ import {
   func,
 } from "test/utils";
 
-describe("isString", function () {
-  it("should return `true` for strings", function () {
-    assert.strictEqual(isString(string), true);
-    assert.strictEqual(isString(Object(string)), true);
-  });
+test("should return `true` for strings", () => {
+  expect(isString(string)).toBeTruthy();
+  expect(isString(Object(string))).toBeTruthy();
+});
 
-  it("should return `false` for non-strings", function () {
-    assert.strictEqual(isString(number), false);
-    assert.strictEqual(isString(true), false);
-    assert.strictEqual(isString(null), false);
-    assert.strictEqual(isString(void 0), false);
-    assert.strictEqual(isString(symbol), false);
-    assert.strictEqual(isString(bigint), false);
-    assert.strictEqual(isString(object), false);
-    assert.strictEqual(isString(array), false);
-    assert.strictEqual(isString(func), false);
-  });
+test("should return `false` for non-strings", () => {
+  expect(isString(number)).toBeFalsy();
+  expect(isString(true)).toBeFalsy();
+  expect(isString(null)).toBeFalsy();
+  expect(isString(void 0)).toBeFalsy();
+  expect(isString(symbol)).toBeFalsy();
+  expect(isString(bigint)).toBeFalsy();
+  expect(isString(object)).toBeFalsy();
+  expect(isString(array)).toBeFalsy();
+  expect(isString(func)).toBeFalsy();
 });
