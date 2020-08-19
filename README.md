@@ -13,7 +13,7 @@
    - [Object Like](src/is/isObjectLike.js) (typeof is `object`, but not `null`.) ✔
    - [Plain Object](src/is/isPlainObject.js) (object which it is containing zero or more key-value pairs.) ✔
    - [Arguments](src/is/isArguments.js) ✔
-2. new 运算符
+2. [new 运算符](src/new/index.js) ✔
 3. call, apply, bind
 4. 柯里化 (currying)
 5. 防抖 (debounce)

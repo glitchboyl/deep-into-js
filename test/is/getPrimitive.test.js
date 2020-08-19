@@ -3,52 +3,54 @@ import {
   string,
   number,
   symbol,
-  bigint,
+  bigInt,
   object,
   array,
   func,
 } from "test/utils";
 
-test(`getPrimitive('${string}') should return \`[object String]\``, () => {
-  expect(getPrimitive(string)).toBe("[object String]");
-});
+describe("getPrimitive", () => {
+  it(`getPrimitive('${string}') should return \`[object String]\``, () => {
+    expect(getPrimitive(string)).toBe("[object String]");
+  });
 
-test(`getPrimitive(${number}) should return \`[object Number]\``, () => {
-  expect(getPrimitive(number)).toBe("[object Number]");
-});
+  it(`getPrimitive(${number}) should return \`[object Number]\``, () => {
+    expect(getPrimitive(number)).toBe("[object Number]");
+  });
 
-test("getPrimitive(false) should return `[object Boolean]`", () => {
-  expect(getPrimitive(false)).toBe("[object Boolean]");
-});
+  it("getPrimitive(false) should return `[object Boolean]`", () => {
+    expect(getPrimitive(false)).toBe("[object Boolean]");
+  });
 
-test("getPrimitive(null) should return `[object Null]`", () => {
-  expect(getPrimitive(null)).toBe("[object Null]");
-});
+  it("getPrimitive(null) should return `[object Null]`", () => {
+    expect(getPrimitive(null)).toBe("[object Null]");
+  });
 
-test("getPrimitive(void 0) should return `[object Undefined]`", () => {
-  expect(getPrimitive(void 0)).toBe("[object Undefined]");
-});
+  it("getPrimitive(void 0) should return `[object Undefined]`", () => {
+    expect(getPrimitive(void 0)).toBe("[object Undefined]");
+  });
 
-test(`getPrimitive(${symbol.toString()}) should return \`[object Symbol]\``, () => {
-  expect(getPrimitive(symbol)).toBe("[object Symbol]");
-});
+  it(`getPrimitive(${symbol.toString()}) should return \`[object Symbol]\``, () => {
+    expect(getPrimitive(symbol)).toBe("[object Symbol]");
+  });
 
-test(`getPrimitive(${bigint}n) should return \`[object BigInt]\``, () => {
-  expect(getPrimitive(bigint)).toBe("[object BigInt]");
-});
+  it(`getPrimitive(${bigInt}n) should return \`[object BigInt]\``, () => {
+    expect(getPrimitive(bigInt)).toBe("[object BigInt]");
+  });
 
-test(`getPrimitive(${JSON.stringify(
-  object
-)}) should return \`[object Object]\``, () => {
-  expect(getPrimitive(object)).toBe("[object Object]");
-});
+  it(`getPrimitive(${JSON.stringify(
+    object
+  )}) should return \`[object Object]\``, () => {
+    expect(getPrimitive(object)).toBe("[object Object]");
+  });
 
-test(`getPrimitive(${JSON.stringify(
-  array
-)}) should return \`[object Array]\``, () => {
-  expect(getPrimitive(array)).toBe("[object Array]");
-});
+  it(`getPrimitive(${JSON.stringify(
+    array
+  )}) should return \`[object Array]\``, () => {
+    expect(getPrimitive(array)).toBe("[object Array]");
+  });
 
-test(`getPrimitive(${func.toString()}) should return \`[object Function]\``, () => {
-  expect(getPrimitive(func)).toBe("[object Function]");
+  it(`getPrimitive(${func.toString()}) should return \`[object Function]\``, () => {
+    expect(getPrimitive(func)).toBe("[object Function]");
+  });
 });
