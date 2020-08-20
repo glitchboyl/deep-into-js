@@ -3,8 +3,8 @@ import isNull from "./isNull";
 /**
  * Checks if `value` is object-like. A object-like value is not `null` and has `typeof` result of `object`.
  * 
- * @param {any} value The value to check.
- * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @param value The value to check.
+ * @returns Returns `true` if `value` is object-like, else `false`.
  * @example
  *
  * isObjectLike({})

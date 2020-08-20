@@ -3,8 +3,8 @@ import getPrimitive from "./getPrimitive";
 /**
  * Checks if `value` is classified as a `Symbol` primitive or object.
  *
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @param value The value to check.
+ * @returns Returns `true` if `value` is a symbol, else `false`.
  * @example
  *
  * isSymbol(Symbol.iterator)

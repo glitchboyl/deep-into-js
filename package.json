@@ -9,7 +9,8 @@
     "url": "git@github.com:glitchboyl/deep-into-js.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "license": "MIT",
   "devDependencies": {

@@ -5,8 +5,8 @@ import isNull from "./isNull";
 /**
  * Strict object type check. Only returns true for plain JavaScript objects.
  *
- * @param {any} value The value to check.
- * @returns {boolean} Returns `true` if `value` is plain object, else `false`.
+ * @param value The value to check.
+ * @returns Returns `true` if `value` is plain object, else `false`.
  * @example
  *
  * isPlainObject([1, 2, 3])

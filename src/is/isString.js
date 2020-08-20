@@ -3,8 +3,8 @@ import getPrimitive from "./getPrimitive";
 /**
  * Checks if `value` is classified as a `String` primitive or object.
  * 
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a string, else `false`.
+ * @param value The value to check.
+ * @returns Returns `true` if `value` is a string, else `false`.
  * @example
  *
  * isString('boy next door')

@@ -8,6 +8,7 @@ import isSymbol from "./isSymbol";
 import isObject from "./isObject";
 import isObjectLike from "./isObjectLike";
 import isPlainObject from "./isPlainObject";
+import isFunction from "./isFunction";
 import isArguments from "./isArguments";
 
 // // These helpers produce better VM code in JS engines due to their explicitness and function inlining.
@@ -30,5 +31,6 @@ export {
   isObject,
   isObjectLike,
   isPlainObject,
+  isFunction,
   isArguments,
 };

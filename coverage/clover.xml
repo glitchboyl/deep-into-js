@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597847729421" clover="3.2.0">
-  <project timestamp="1597847729422" name="All files">
+<coverage generated="1597888658364" clover="3.2.0">
+  <project timestamp="1597888658364" name="All files">
     <metrics statements="47" coveredstatements="46" conditionals="29" coveredconditionals="28" methods="16" coveredmethods="14" elements="92" coveredelements="88" complexity="0" loc="47" ncloc="47" packages="3" files="14" classes="14"/>
     <package name="src.is">
       <metrics statements="31" coveredstatements="31" conditionals="23" coveredconditionals="23" methods="12" coveredmethods="12"/>
-      <file name="getPrimitive.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\getPrimitive.js">
+      <file name="getPrimitive.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\getPrimitive.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="8" type="stmt"/>
         <line num="9" count="8" type="stmt"/>
         <line num="10" count="72" type="stmt"/>
       </file>
-      <file name="isArguments.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isArguments.js">
+      <file name="isArguments.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isArguments.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="12" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="isBigInt.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isBigInt.js">
+      <file name="isBigInt.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isBigInt.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="11" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="isBoolean.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isBoolean.js">
+      <file name="isBoolean.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isBoolean.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="13" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="isNull.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isNull.js">
+      <file name="isNull.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isNull.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="14" count="6" type="stmt"/>
         <line num="15" count="78" type="stmt"/>
       </file>
-      <file name="isNumber.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isNumber.js">
+      <file name="isNumber.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isNumber.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="12" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="isObject.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isObject.js">
+      <file name="isObject.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isObject.js">
         <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="19" type="stmt"/>
         <line num="26" count="19" type="cond" truecount="3" falsecount="0"/>
       </file>
-      <file name="isObjectLike.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isObjectLike.js">
+      <file name="isObjectLike.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isObjectLike.js">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="22" count="3" type="stmt"/>
         <line num="23" count="45" type="stmt"/>
         <line num="24" count="45" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="isPlainObject.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isPlainObject.js">
+      <file name="isPlainObject.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isPlainObject.js">
         <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="16" type="cond" truecount="4" falsecount="0"/>
@@ -56,17 +56,17 @@
         <line num="27" count="2" type="stmt"/>
         <line num="30" count="2" type="stmt"/>
       </file>
-      <file name="isString.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isString.js">
+      <file name="isString.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isString.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="11" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="isSymbol.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isSymbol.js">
+      <file name="isSymbol.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isSymbol.js">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="11" type="cond" truecount="2" falsecount="0"/>
       </file>
-      <file name="isUndefined.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\is\isUndefined.js">
+      <file name="isUndefined.js" path="C:\Users\liluo\Desktop\deep-into-js\src\is\isUndefined.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="11" type="stmt"/>
@@ -74,7 +74,7 @@
     </package>
     <package name="src.new">
       <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="index.js" path="C:\Users\Lonel\Desktop\deep-into-js\src\new\index.js">
+      <file name="index.js" path="C:\Users\liluo\Desktop\deep-into-js\src\new\index.js">
         <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="12" count="1" type="stmt"/>
@@ -85,7 +85,7 @@
     </package>
     <package name="test">
       <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
-      <file name="utils.js" path="C:\Users\Lonel\Desktop\deep-into-js\test\utils.js">
+      <file name="utils.js" path="C:\Users\liluo\Desktop\deep-into-js\test\utils.js">
         <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
         <line num="1" count="13" type="stmt"/>
         <line num="2" count="13" type="stmt"/>
