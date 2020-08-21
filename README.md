@@ -15,7 +15,7 @@
    - [Function](src/is/isFunction.js) ✔
    - [Arguments](src/is/isArguments.js) ✔
 2. [new 运算符](src/new/index.js) ✔
-3. [call](src/functionExtends/call.js), [apply](src/functionExtends/apply.js), bind
+3. [call](src/functionExtends/call.js), [apply](src/functionExtends/apply.js), [bind](src/functionExtends/bind.js) ✔
 4. 柯里化 (currying)
 5. 防抖 (debounce)
 6. 节流 (throttle)
