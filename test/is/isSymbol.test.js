@@ -6,7 +6,7 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe('isSymbol', () => {
@@ -24,6 +24,6 @@ describe('isSymbol', () => {
     expect(isSymbol(bigInt)).toBeFalsy();
     expect(isSymbol(object)).toBeFalsy();
     expect(isSymbol(array)).toBeFalsy();
-    expect(isSymbol(func)).toBeFalsy();
+    expect(isSymbol(fn)).toBeFalsy();
   });
 });

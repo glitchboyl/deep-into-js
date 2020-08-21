@@ -1,9 +1,9 @@
 import New from "new";
-import { string, object, funcInstance } from "test/utils";
+import { string, object, fnInstance } from "test/utils";
 
 describe("new", () => {
   it("`new` a instance normally", () => {
-    expect(New(funcInstance, string).text).toBe(string);
+    expect(New(fnInstance, string).text).toBe(string);
   });
 
   it("when the constructor returns an object, the return value is used as the result", () => {

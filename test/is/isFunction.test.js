@@ -6,20 +6,20 @@ import {
   bigInt,
   object,
   array,
-  func,
-  asyncFunc,
+  fn,
+  asyncFn,
   generator,
-  funcInstance,
+  fnInstance,
   classInstance,
   regExp,
 } from "test/utils";
 
 describe("isFunction", () => {
   it("should return `true` for functions", () => {
-    expect(isFunction(func)).toBeTruthy();
-    expect(isFunction(asyncFunc)).toBeTruthy();
+    expect(isFunction(fn)).toBeTruthy();
+    expect(isFunction(asyncFn)).toBeTruthy();
     expect(isFunction(generator)).toBeTruthy();
-    expect(isFunction(funcInstance)).toBeTruthy();
+    expect(isFunction(fnInstance)).toBeTruthy();
     expect(isFunction(classInstance)).toBeTruthy();
     expect(isFunction(Math.round)).toBeTruthy();
   });

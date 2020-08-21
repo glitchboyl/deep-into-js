@@ -6,7 +6,7 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe('isString', () => {
@@ -24,6 +24,6 @@ describe('isString', () => {
     expect(isString(bigInt)).toBeFalsy();
     expect(isString(object)).toBeFalsy();
     expect(isString(array)).toBeFalsy();
-    expect(isString(func)).toBeFalsy();
+    expect(isString(fn)).toBeFalsy();
   });
 });

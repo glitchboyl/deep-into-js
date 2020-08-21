@@ -1,6 +1,7 @@
+import isFunction from "is/isFunction";
 import call from "./call";
 import apply from "./apply";
-import isFunction from "is/isFunction";
+import bind from "./bind";
 
 /**
  * Extension the function and will return the methods: `call`, `apply`, `bind`.
@@ -16,9 +17,10 @@ const extend = (callee) => {
   return {
     call: (thisArg, ...args) => call(callee)(thisArg, ...args),
     apply: (thisArg, args) => apply(callee)(thisArg, args),
+    bind: (thisArg, ...args) => bind(callee)(thisArg, ...args),
   };
 };
 
-export { call, apply };
+export { call, apply, bind };
 
 export default extend;

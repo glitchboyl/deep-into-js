@@ -1,5 +1,5 @@
 import apply from "functionExtends/apply";
-import { string, funcInstance } from "test/utils";
+import { string, fnInstance } from "test/utils";
 
 describe("apply", () => {
   it("the value of `this` should be bound to object `obj` when apply `greet`", () => {
@@ -15,10 +15,10 @@ describe("apply", () => {
     expect(apply(greet)(obj)).toBe(`Hello, ${string}.`);
   });
 
-  it("when using `apply` to chain constructors for an object, invoke `funcInstance` and passing `this` and `string`, `Tom.text` should be equal to `string`", () => {
+  it("when using `apply` to chain constructors for an object, invoke `fnInstance` and passing `this` and `string`, `Tom.text` should be equal to `string`", () => {
     function Person(name, text) {
       this.name = name;
-      apply(funcInstance)(this, [text]);
+      apply(fnInstance)(this, [text]);
     }
 
     const Tom = new Person("Tom", string);

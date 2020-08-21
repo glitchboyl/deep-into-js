@@ -6,14 +6,14 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe('isObject', () => {
   it("should return `true` for objects", () => {
     expect(isObject(object)).toBeTruthy();
     expect(isObject(array)).toBeTruthy();
-    expect(isObject(func)).toBeTruthy();
+    expect(isObject(fn)).toBeTruthy();
     expect(isObject(Object(string))).toBeTruthy();
     expect(isObject(Object(number))).toBeTruthy();
     expect(isObject(Object(false))).toBeTruthy();

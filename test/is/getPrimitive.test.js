@@ -6,7 +6,7 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe("getPrimitive", () => {
@@ -50,7 +50,7 @@ describe("getPrimitive", () => {
     expect(getPrimitive(array)).toBe("[object Array]");
   });
 
-  it(`getPrimitive(${func.toString()}) should return \`[object Function]\``, () => {
-    expect(getPrimitive(func)).toBe("[object Function]");
+  it(`getPrimitive(${fn.toString()}) should return \`[object Function]\``, () => {
+    expect(getPrimitive(fn)).toBe("[object Function]");
   });
 });

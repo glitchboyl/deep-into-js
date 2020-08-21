@@ -6,7 +6,7 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe('isUndefined', () => {
@@ -24,6 +24,6 @@ describe('isUndefined', () => {
     expect(isUndefined(bigInt)).toBeFalsy();
     expect(isUndefined(object)).toBeFalsy();
     expect(isUndefined(array)).toBeFalsy();
-    expect(isUndefined(func)).toBeFalsy();
+    expect(isUndefined(fn)).toBeFalsy();
   });
 });

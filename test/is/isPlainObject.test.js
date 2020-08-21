@@ -6,7 +6,7 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe("isPlainObject", () => {
@@ -41,7 +41,7 @@ describe("isPlainObject", () => {
     expect(isPlainObject(symbol)).toBeFalsy();
     expect(isPlainObject(bigInt)).toBeFalsy();
     expect(isPlainObject(array)).toBeFalsy();
-    expect(isPlainObject(func)).toBeFalsy();
+    expect(isPlainObject(fn)).toBeFalsy();
     expect(isPlainObject(new Foo("Jerry"))).toBeFalsy();
   });
 });

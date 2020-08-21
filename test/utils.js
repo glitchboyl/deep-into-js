@@ -4,11 +4,11 @@ export const symbol = Symbol ? Symbol(string) : undefined;
 export const bigInt = 2333333333333333333333n;
 export const object = { take: "it boy" };
 export const array = [2, 3, 3];
-export const func = () => {};
-export const asyncFunc = async () => {};
+export const fn = () => {};
+export const asyncFn = async () => {};
 export const generator = function* () {};
 
-export const funcInstance = function (text) {
+export const fnInstance = function (text) {
   this.text = text;
 };
 export const classInstance = class {

@@ -6,7 +6,7 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe("isObjectLike", () => {
@@ -30,6 +30,6 @@ describe("isObjectLike", () => {
     expect(isObjectLike(void 0)).toBeFalsy();
     expect(isObjectLike(symbol)).toBeFalsy();
     expect(isObjectLike(bigInt)).toBeFalsy();
-    expect(isObjectLike(func)).toBeFalsy();
+    expect(isObjectLike(fn)).toBeFalsy();
   });
 });

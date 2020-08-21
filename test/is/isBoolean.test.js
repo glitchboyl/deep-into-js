@@ -6,7 +6,7 @@ import {
   bigInt,
   object,
   array,
-  func,
+  fn,
 } from "test/utils";
 
 describe("isBoolean", () => {
@@ -26,6 +26,6 @@ describe("isBoolean", () => {
     expect(isBoolean(bigInt)).toBeFalsy();
     expect(isBoolean(object)).toBeFalsy();
     expect(isBoolean(array)).toBeFalsy();
-    expect(isBoolean(func)).toBeFalsy();
+    expect(isBoolean(fn)).toBeFalsy();
   });
 });

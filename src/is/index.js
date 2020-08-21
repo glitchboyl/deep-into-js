@@ -13,11 +13,11 @@ import isArguments from "./isArguments";
 
 // // These helpers produce better VM code in JS engines due to their explicitness and function inlining.
 // export const isDef = (value) => {
-//   return value !== null && value !== undefined;
+//   return !isNull(value) && !isUndefined(value);
 // };
 
 // export const isUndef = (value) => {
-//   return value === null || value === undefined;
+//   return isNull(value) || isUndefined(value);
 // };
 
 export {
