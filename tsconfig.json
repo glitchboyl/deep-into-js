@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.iterable"],
+    "moduleResolution": "Node",
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "declarationDir": "types",
+    "outDir": "types",
+    "emitDeclarationOnly": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"],
+    },
+    "types": ["vitest/globals"]
+  },
+}

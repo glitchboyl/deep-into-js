@@ -2,20 +2,23 @@
   "name": "deep-into-js",
   "version": "1.0.0-beta",
   "private": true,
-  "author": "glitchboyl",
+  "author": "glitchboyl (https://github.com/glitchboyl)",
   "description": "Deep learning JavaScript",
   "repository": {
     "type": "git",
     "url": "git@github.com:glitchboyl/deep-into-js.git"
   },
   "scripts": {
-    "test": "jest",
-    "coverage": "jest --coverage"
+    "test": "vitest",
+    "test:ui": "vitest -w --ui",
+    "coverage": "vitest run --coverage"
   },
   "license": "MIT",
   "devDependencies": {
-    "babel-plugin-module-resolver": "^4.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
-    "jest": "^26.4.0"
+    "@types/node": "^17.0.34",
+    "@vitest/ui": "^0.12.6",
+    "jsdom": "^19.0.0",
+    "typescript": "^4.6.4",
+    "vitest": "^0.12.6"
   }
 }
