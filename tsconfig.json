@@ -23,7 +23,6 @@
     "noImplicitReturns": true,
     "noImplicitThis": false,
     "skipLibCheck": true,
-    "isolatedModules": true,
     "paths": {
       "@": ["src"],
       "@/*": ["src/*"],
