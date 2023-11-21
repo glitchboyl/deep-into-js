@@ -11,19 +11,19 @@ import {
 
 describe("isBigInt", () => {
   it("should return `true` for bigInts", () => {
-    expect(isBigInt(bigInt)).toBeTruthy();
-    expect(isBigInt(Object(bigInt))).toBeTruthy();
+    expect(isBigInt(bigInt)).toMatchInlineSnapshot('true');
+    expect(isBigInt(Object(bigInt))).toMatchInlineSnapshot('true');
   });
 
   it("should return `false` for non-bigInts", () => {
-    expect(isBigInt(string)).toBeFalsy();
-    expect(isBigInt(number)).toBeFalsy();
-    expect(isBigInt(true)).toBeFalsy();
-    expect(isBigInt(null)).toBeFalsy();
-    expect(isBigInt(void 0)).toBeFalsy();
-    expect(isBigInt(symbol)).toBeFalsy();
-    expect(isBigInt(object)).toBeFalsy();
-    expect(isBigInt(array)).toBeFalsy();
-    expect(isBigInt(fn)).toBeFalsy();
+    expect(isBigInt(string)).toMatchInlineSnapshot('false');
+    expect(isBigInt(number)).toMatchInlineSnapshot('false');
+    expect(isBigInt(true)).toMatchInlineSnapshot('false');
+    expect(isBigInt(null)).toMatchInlineSnapshot('false');
+    expect(isBigInt(void 0)).toMatchInlineSnapshot('false');
+    expect(isBigInt(symbol)).toMatchInlineSnapshot('false');
+    expect(isBigInt(object)).toMatchInlineSnapshot('false');
+    expect(isBigInt(array)).toMatchInlineSnapshot('false');
+    expect(isBigInt(fn)).toMatchInlineSnapshot('false');
   });
 });

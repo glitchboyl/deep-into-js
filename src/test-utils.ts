@@ -1,4 +1,5 @@
-import type { Obj } from './types';
+import fakeTimers from "@sinonjs/fake-timers";
+import type { Obj } from "./types";
 
 export const string = "boy next door";
 export const number = 2333;
@@ -21,3 +22,11 @@ export const classInstance = class {
 };
 
 export const regExp = /blind/;
+
+// wait time
+const clock = fakeTimers.install();
+export const wait = (time = 0) =>
+  new Promise((res) => {
+    setTimeout(res, time);
+    clock.tick(time);
+  });

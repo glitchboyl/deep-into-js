@@ -10,6 +10,6 @@ import getPrimitive from "@/is/getPrimitive";
  * isSymbol(Symbol('boy next door'))
  * // => true
  */
-export default function isSymbol(data: any) {
+export default function isSymbol(data: any): data is Symbol {
   return getPrimitive(data) === "[object Symbol]";
 }

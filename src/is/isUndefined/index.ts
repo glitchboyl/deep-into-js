@@ -14,6 +14,6 @@
  * isUndefined(null)
  * // => false
  */
-export default function isUndefined(data?: any) {
+export default function isUndefined(data?: any): data is undefined {
   return data === undefined;
 }

@@ -11,19 +11,19 @@ import {
 
 describe("isString", () => {
   it("should return `true` for strings", () => {
-    expect(isString(string)).toBeTruthy();
-    expect(isString(Object(string))).toBeTruthy();
+    expect(isString(string)).toMatchInlineSnapshot('true');
+    expect(isString(Object(string))).toMatchInlineSnapshot('true');
   });
 
   it("should return `false` for non-strings", () => {
-    expect(isString(number)).toBeFalsy();
-    expect(isString(true)).toBeFalsy();
-    expect(isString(null)).toBeFalsy();
-    expect(isString(void 0)).toBeFalsy();
-    expect(isString(symbol)).toBeFalsy();
-    expect(isString(bigInt)).toBeFalsy();
-    expect(isString(object)).toBeFalsy();
-    expect(isString(array)).toBeFalsy();
-    expect(isString(fn)).toBeFalsy();
+    expect(isString(number)).toMatchInlineSnapshot('false');
+    expect(isString(true)).toMatchInlineSnapshot('false');
+    expect(isString(null)).toMatchInlineSnapshot('false');
+    expect(isString(void 0)).toMatchInlineSnapshot('false');
+    expect(isString(symbol)).toMatchInlineSnapshot('false');
+    expect(isString(bigInt)).toMatchInlineSnapshot('false');
+    expect(isString(object)).toMatchInlineSnapshot('false');
+    expect(isString(array)).toMatchInlineSnapshot('false');
+    expect(isString(fn)).toMatchInlineSnapshot('false');
   });
 });

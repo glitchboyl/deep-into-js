@@ -13,6 +13,6 @@ import getPrimitive from "@/is/getPrimitive";
  * isString(2333)
  * // => false
  */
-export default function isString(data: any) {
+export default function isString(data: any): data is String {
   return getPrimitive(data) === "[object String]";
 }

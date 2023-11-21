@@ -16,23 +16,23 @@ import {
 
 describe("isFunction", () => {
   it("should return `true` for functions", () => {
-    expect(isFunction(fn)).toBeTruthy();
-    expect(isFunction(asyncFn)).toBeTruthy();
-    expect(isFunction(generator)).toBeTruthy();
-    expect(isFunction(fnInstance)).toBeTruthy();
-    expect(isFunction(classInstance)).toBeTruthy();
+    expect(isFunction(fn)).toMatchInlineSnapshot('true');
+    expect(isFunction(asyncFn)).toMatchInlineSnapshot('true');
+    expect(isFunction(generator)).toMatchInlineSnapshot('true');
+    expect(isFunction(fnInstance)).toMatchInlineSnapshot('true');
+    expect(isFunction(classInstance)).toMatchInlineSnapshot('true');
   });
 
   it("should return `false` for non-functions", () => {
-    expect(isFunction(string)).toBeFalsy();
-    expect(isFunction(number)).toBeFalsy();
-    expect(isFunction(true)).toBeFalsy();
-    expect(isFunction(null)).toBeFalsy();
-    expect(isFunction(void 0)).toBeFalsy();
-    expect(isFunction(symbol)).toBeFalsy();
-    expect(isFunction(bigInt)).toBeFalsy();
-    expect(isFunction(object)).toBeFalsy();
-    expect(isFunction(array)).toBeFalsy();
-    expect(isFunction(regExp)).toBeFalsy();
+    expect(isFunction(string)).toMatchInlineSnapshot('false');
+    expect(isFunction(number)).toMatchInlineSnapshot('false');
+    expect(isFunction(true)).toMatchInlineSnapshot('false');
+    expect(isFunction(null)).toMatchInlineSnapshot('false');
+    expect(isFunction(void 0)).toMatchInlineSnapshot('false');
+    expect(isFunction(symbol)).toMatchInlineSnapshot('false');
+    expect(isFunction(bigInt)).toMatchInlineSnapshot('false');
+    expect(isFunction(object)).toMatchInlineSnapshot('false');
+    expect(isFunction(array)).toMatchInlineSnapshot('false');
+    expect(isFunction(regExp)).toMatchInlineSnapshot('false');
   });
 });

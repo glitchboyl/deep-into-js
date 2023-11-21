@@ -11,25 +11,25 @@ import {
 
 describe("isObjectLike", () => {
   it("should return `true` for object-like", () => {
-    expect(isObjectLike(object)).toBeTruthy();
-    expect(isObjectLike(array)).toBeTruthy();
-    expect(isObjectLike(Object(string))).toBeTruthy();
-    expect(isObjectLike(Object(number))).toBeTruthy();
-    expect(isObjectLike(Object(false))).toBeTruthy();
-    expect(isObjectLike(Object(symbol))).toBeTruthy();
-    expect(isObjectLike(Object(bigInt))).toBeTruthy();
-    expect(isObjectLike(new Date())).toBeTruthy();
-    expect(isObjectLike(new Error())).toBeTruthy();
+    expect(isObjectLike(object)).toMatchInlineSnapshot('true');
+    expect(isObjectLike(array)).toMatchInlineSnapshot('true');
+    expect(isObjectLike(Object(string))).toMatchInlineSnapshot('true');
+    expect(isObjectLike(Object(number))).toMatchInlineSnapshot('true');
+    expect(isObjectLike(Object(false))).toMatchInlineSnapshot('true');
+    expect(isObjectLike(Object(symbol))).toMatchInlineSnapshot('true');
+    expect(isObjectLike(Object(bigInt))).toMatchInlineSnapshot('true');
+    expect(isObjectLike(new Date())).toMatchInlineSnapshot('true');
+    expect(isObjectLike(new Error())).toMatchInlineSnapshot('true');
   });
 
   it("should return `false` for non-object-like", () => {
-    expect(isObjectLike(string)).toBeFalsy();
-    expect(isObjectLike(number)).toBeFalsy();
-    expect(isObjectLike(true)).toBeFalsy();
-    expect(isObjectLike(null)).toBeFalsy();
-    expect(isObjectLike(void 0)).toBeFalsy();
-    expect(isObjectLike(symbol)).toBeFalsy();
-    expect(isObjectLike(bigInt)).toBeFalsy();
-    expect(isObjectLike(fn)).toBeFalsy();
+    expect(isObjectLike(string)).toMatchInlineSnapshot('false');
+    expect(isObjectLike(number)).toMatchInlineSnapshot('false');
+    expect(isObjectLike(true)).toMatchInlineSnapshot('false');
+    expect(isObjectLike(null)).toMatchInlineSnapshot('false');
+    expect(isObjectLike(void 0)).toMatchInlineSnapshot('false');
+    expect(isObjectLike(symbol)).toMatchInlineSnapshot('false');
+    expect(isObjectLike(bigInt)).toMatchInlineSnapshot('false');
+    expect(isObjectLike(fn)).toMatchInlineSnapshot('false');
   });
 });

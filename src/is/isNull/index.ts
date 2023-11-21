@@ -11,6 +11,6 @@
  * isNull(void 0)
  * // => false
  */
-export default function isNull(data: any) {
+export default function isNull(data: any): data is null {
   return data === null;
 }

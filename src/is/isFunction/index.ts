@@ -23,6 +23,6 @@
  * isFunction(/abc/)
  * // => false
  */
-export default function isFunction(data: any) {
+export default function isFunction(data: any): data is Function {
   return typeof data === "function";
 }

@@ -13,6 +13,6 @@ import getPrimitive from "@/is/getPrimitive";
  * isString(2333)
  * // => false
  */
-export default function isBigInt(data: unknown) {
+export default function isBigInt(data: unknown): data is BigInt {
   return getPrimitive(data) === "[object BigInt]";
 }

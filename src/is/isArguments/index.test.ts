@@ -11,20 +11,20 @@ import {
 
 describe("isArguments", () => {
   it("should return `true` for arguments", function () {
-    expect(isArguments(arguments)).toBeTruthy();
-    expect(isArguments(Object(arguments))).toBeTruthy();
+    expect(isArguments(arguments)).toMatchInlineSnapshot('true');
+    expect(isArguments(Object(arguments))).toMatchInlineSnapshot('true');
   });
 
   it("should return `false` for non-arguments", () => {
-    expect(isArguments(string)).toBeFalsy();
-    expect(isArguments(number)).toBeFalsy();
-    expect(isArguments(true)).toBeFalsy();
-    expect(isArguments(null)).toBeFalsy();
-    expect(isArguments(void 0)).toBeFalsy();
-    expect(isArguments(symbol)).toBeFalsy();
-    expect(isArguments(bigInt)).toBeFalsy();
-    expect(isArguments(object)).toBeFalsy();
-    expect(isArguments(array)).toBeFalsy();
-    expect(isArguments(fn)).toBeFalsy();
+    expect(isArguments(string)).toMatchInlineSnapshot('false');
+    expect(isArguments(number)).toMatchInlineSnapshot('false');
+    expect(isArguments(true)).toMatchInlineSnapshot('false');
+    expect(isArguments(null)).toMatchInlineSnapshot('false');
+    expect(isArguments(void 0)).toMatchInlineSnapshot('false');
+    expect(isArguments(symbol)).toMatchInlineSnapshot('false');
+    expect(isArguments(bigInt)).toMatchInlineSnapshot('false');
+    expect(isArguments(object)).toMatchInlineSnapshot('false');
+    expect(isArguments(array)).toMatchInlineSnapshot('false');
+    expect(isArguments(fn)).toMatchInlineSnapshot('false');
   });
 });
